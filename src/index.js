@@ -7,7 +7,7 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-themeEdit();
+themeCheck();
 
 
 document.getElementById('theme-switch-toggle').onclick = function () {
@@ -21,7 +21,7 @@ document.getElementById('theme-switch-toggle').onclick = function () {
   }
 };
 
-function themeEdit() {
+function themeCheck() {
   const theme = localStorage.getItem('theme');
   const currentTheme = JSON.parse(theme);
 
